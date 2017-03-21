@@ -164,9 +164,9 @@ fi
 /opt/coturn/bin/turnserver
 /opt/coturn/bin/turnadmin
 %attr(0640,turnserver,turnserver) %{_localstatedir}/db/turndb
-%{_mandir}/man1/coturn.1.gz
-%{_mandir}/man1/turnserver.1.gz
-%{_mandir}/man1/turnadmin.1.gz
+/usr/share/man/man1/coturn.1.gz
+/usr/share/man/man1/turnserver.1.gz
+/usr/share/man/man1/turnadmin.1.gz
 %dir %attr(-,turnserver,turnserver) %{_sysconfdir}/%{name}
 %config(noreplace) %attr(0644,turnserver,turnserver) %{_sysconfdir}/%{name}/turnserver.conf
 %dir %attr(0750,turnserver,turnserver) %{_localstatedir}/run/turnserver
@@ -177,24 +177,24 @@ fi
 %config %{_unitdir}/turnserver.service
 %{_tmpfilesdir}/turnserver.conf
 %endif
-%dir %{_docdir}/%{name}
-%{_docdir}/%{name}/LICENSE
-%{_docdir}/%{name}/INSTALL
-%{_docdir}/%{name}/postinstall.txt
-%{_docdir}/%{name}/README.turnadmin
-%{_docdir}/%{name}/README.turnserver
-%{_docdir}/%{name}/schema.sql
-%{_docdir}/%{name}/schema.mongo.sh
-%{_docdir}/%{name}/schema.stats.redis
-%{_docdir}/%{name}/schema.userdb.redis
-%dir %{_datadir}/%{name}
-%{_datadir}/%{name}/schema.sql
-%{_datadir}/%{name}/schema.mongo.sh
-%{_datadir}/%{name}/schema.stats.redis
-%{_datadir}/%{name}/schema.userdb.redis
-%{_datadir}/%{name}/testredisdbsetup.sh
-%{_datadir}/%{name}/testmongosetup.sh
-%{_datadir}/%{name}/testsqldbsetup.sql
+%dir /opt/coturn/share/doc/turnserver
+/opt/coturn/share/doc/turnserverLICENSE
+/opt/coturn/share/doc/turnserverINSTALL
+/opt/coturn/share/doc/turnserverpostinstall.txt
+/opt/coturn/share/doc/turnserverREADME.turnadmin
+/opt/coturn/share/doc/turnserverREADME.turnserver
+/opt/coturn/share/doc/turnserverschema.sql
+/opt/coturn/share/doc/turnserverschema.mongo.sh
+/opt/coturn/share/doc/turnserverschema.stats.redis
+/opt/coturn/share/doc/turnserverschema.userdb.redis
+%dir /usr/share/turnserver
+/usr/share/turnserver/schema.sql
+/usr/share/turnserver/schema.mongo.sh
+/usr/share/turnserver/schema.stats.redis
+/usr/share/turnserver/schema.userdb.redis
+/usr/share/turnserver/testredisdbsetup.sh
+/usr/share/turnserver/testmongosetup.sh
+/usr/share/turnserver/testsqldbsetup.sql
 %dir %{_datadir}/%{name}/etc
 %{_datadir}/%{name}/etc/turn_server_cert.pem
 %{_datadir}/%{name}/etc/turn_server_pkey.pem
