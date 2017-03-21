@@ -161,8 +161,8 @@ fi
 
 %files
 %defattr(-,root,root)
-/root/rpmbuild/BUILDROOT/turnserver-4.5.0.6-0.el6.x86_64/usr/bin/turnserver
-/root/rpmbuild/BUILDROOT/turnserver-4.5.0.6-0.el6.x86_64/usr/bin/turnadmin
+/usr/bin/turnserver
+/usr/bin/turnadmin
 %attr(0640,turnserver,turnserver) %{_localstatedir}/db/turndb
 %{_mandir}/man1/coturn.1.gz
 %{_mandir}/man1/turnserver.1.gz
