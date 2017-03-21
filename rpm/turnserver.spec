@@ -278,20 +278,20 @@ fi
 /opt/coturn/share/examples/turnserver/etc/turn_client_pkey.pem
 
 %files		client-libs
-%{_docdir}/%{name}/LICENSE
-%{_libdir}/libturnclient.a
+/opt/coturn/share/doc/turnserver/LICENSE
+/opt/coturn/lib/libturnclient.a
 
 %files		client-devel
-%{_docdir}/%{name}/LICENSE
-%dir %{_includedir}/turn
-%{_includedir}/turn/ns_turn_defs.h
-%dir %{_includedir}/turn/client
-%{_includedir}/turn/client/ns_turn_ioaddr.h
-%{_includedir}/turn/client/ns_turn_msg_addr.h
-%{_includedir}/turn/client/ns_turn_msg_defs.h
-%{_includedir}/turn/client/ns_turn_msg_defs_experimental.h
-%{_includedir}/turn/client/ns_turn_msg.h
-%{_includedir}/turn/client/TurnMsgLib.h
+/opt/coturn/share/doc/turnserver/LICENSE
+%dir /opt/coturn/include/turn
+/opt/coturn/include/turn/ns_turn_defs.h
+%dir /opt/coturn/include/turn/client
+/opt/coturn/include/turn/client//ns_turn_ioaddr.h
+/opt/coturn/include/turn/client/ns_turn_msg_addr.h
+/opt/coturn/include/turn/client/ns_turn_msg_defs.h
+/opt/coturn/include/turn/client/ns_turn_msg_defs_experimental.h
+/opt/coturn/include/turn/client/ns_turn_msg.h
+/opt/coturn/include/turn/client/TurnMsgLib.h
 
 %changelog
 * Mon Oct 17 2016 Oleg Moskalenko <mom040267@gmail.com>
