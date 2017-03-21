@@ -22,6 +22,7 @@ BuildRequires:	mariadb-devel
 Requires: 	mariadb-libs
 %endif
 
+%define _unpackaged_files_terminate_build 0 
 
 %description
 The TURN Server is a VoIP media traffic NAT traversal server and gateway. It
