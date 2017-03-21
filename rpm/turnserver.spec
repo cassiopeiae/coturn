@@ -263,12 +263,12 @@ fi
 /opt/coturn/bin/turnutils_uclient
 /opt/coturn/bin/turnutils_oauth
 /opt/coturn/bin/turnutils_natdiscovery
-/opt/coturn/man/man1/turnutils.1.gz
-/opt/coturn/man/man1/turnutils_peer.1.gz
-/opt/coturn/man/man1/turnutils_stunclient.1.gz
-/opt/coturn/man/man1/turnutils_uclient.1.gz
-/opt/coturn/man/man1/turnutils_oauth.1.gz
-/opt/coturn/man/man1/turnutils_natdiscovery.1.gz
+/opt/coturn/man/man1/turnutils.1
+/opt/coturn/man/man1/turnutils_peer.1
+/opt/coturn/man/man1/turnutils_stunclient.1
+/opt/coturn/man/man1/turnutils_uclient.1
+/opt/coturn/man/man1/turnutils_oauth.1
+/opt/coturn/man/man1/turnutils_natdiscovery.1
 %dir %{_docdir}/%{name}
 %{_docdir}/%{name}/LICENSE
 %{_docdir}/%{name}/README.turnutils
