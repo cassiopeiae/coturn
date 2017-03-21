@@ -103,7 +103,7 @@ This package contains the TURN client development headers.
 PREFIX=%{_prefix} CONFDIR=%{_sysconfdir}/%{name} EXAMPLESDIR=%{_datadir}/%{name} \
 MANPREFIX=%{_datadir} LIBDIR=%{_libdir} ./configure
 make
-
+_bindir=/opt/coturn
 %install
 rm -rf $RPM_BUILD_ROOT
 DESTDIR=$RPM_BUILD_ROOT make install
@@ -160,8 +160,10 @@ fi
 /bin/systemctl --system daemon-reload
 %endif
 
+
+
 %files
-%{_bindir}=/opt/coturn
+
 %defattr(-,root,root)
 %{_bindir}/turnserver
 %{_bindir}/turnadmin
