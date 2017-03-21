@@ -161,8 +161,9 @@ fi
 %endif
 
 %files
+%{_bindir}=/opt/coturn
 %defattr(-,root,root)
-/opt/coturn/turnserver
+%{_bindir}/turnserver
 %{_bindir}/turnadmin
 %attr(0640,turnserver,turnserver) %{_localstatedir}/db/turndb
 %{_mandir}/man1/coturn.1.gz
