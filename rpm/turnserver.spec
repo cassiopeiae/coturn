@@ -178,15 +178,15 @@ fi
 %{_tmpfilesdir}/turnserver.conf
 %endif
 %dir /opt/coturn/share/doc/turnserver
-/opt/coturn/share/doc/turnserverLICENSE
-/opt/coturn/share/doc/turnserverINSTALL
-/opt/coturn/share/doc/turnserverpostinstall.txt
-/opt/coturn/share/doc/turnserverREADME.turnadmin
-/opt/coturn/share/doc/turnserverREADME.turnserver
-/opt/coturn/share/doc/turnserverschema.sql
-/opt/coturn/share/doc/turnserverschema.mongo.sh
-/opt/coturn/share/doc/turnserverschema.stats.redis
-/opt/coturn/share/doc/turnserverschema.userdb.redis
+/opt/coturn/share/doc/turnserver/LICENSE
+/opt/coturn/share/doc/turnserver/INSTALL
+/opt/coturn/share/doc/turnserver/postinstall.txt
+/opt/coturn/share/doc/turnserver/README.turnadmin
+/opt/coturn/share/doc/turnserver/README.turnserver
+/opt/coturn/share/doc/turnserver/schema.sql
+/opt/coturn/share/doc/turnserver/schema.mongo.sh
+/opt/coturn/share/doc/turnserver/schema.stats.redis
+/opt/coturn/share/doc/turnserver/schema.userdb.redis
 %dir /usr/share/turnserver
 /usr/share/turnserver/schema.sql
 /usr/share/turnserver/schema.mongo.sh
@@ -263,12 +263,12 @@ fi
 /opt/coturn/bin/turnutils_uclient
 /opt/coturn/bin/turnutils_oauth
 /opt/coturn/bin/turnutils_natdiscovery
-%{_mandir}/man1/turnutils.1.gz
-%{_mandir}/man1/turnutils_peer.1.gz
-%{_mandir}/man1/turnutils_stunclient.1.gz
-%{_mandir}/man1/turnutils_uclient.1.gz
-%{_mandir}/man1/turnutils_oauth.1.gz
-%{_mandir}/man1/turnutils_natdiscovery.1.gz
+/opt/coturn/man/man1/turnutils.1.gz
+/opt/coturn/man/man1/turnutils_peer.1.gz
+/opt/coturn/man/man1/turnutils_stunclient.1.gz
+/opt/coturn/man/man1/turnutils_uclient.1.gz
+/opt/coturn/man/man1/turnutils_oauth.1.gz
+/opt/coturn/man/man1/turnutils_natdiscovery.1.gz
 %dir %{_docdir}/%{name}
 %{_docdir}/%{name}/LICENSE
 %{_docdir}/%{name}/README.turnutils
