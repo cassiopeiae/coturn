@@ -102,16 +102,16 @@ This package contains the TURN client development headers.
 %build
 PREFIX=/opt ./configure
 make
-_bindir=/opt/coturn
+
 %install
 rm -rf $RPM_BUILD_ROOT
 DESTDIR=$RPM_BUILD_ROOT make install
 mkdir -p $RPM_BUILD_ROOT/%{_sysconfdir}/sysconfig
 install -m644 rpm/turnserver.sysconfig \
-		$RPM_BUILD_ROOT/%{_sysconfdir}/sysconfig/turnserver
+		/etc/sysconfig/turnserver
 sed -i -e "s/#syslog/syslog/g" \
     -e "s/#no-stdout-log/no-stdout-log/g" \
-    $RPM_BUILD_ROOT/%{_sysconfdir}/%{name}/turnserver.conf.default
+    $RPM_BUILD_ROOcd T/%{_sysconfdir}/%{name}/turnserver.conf.default
 %if 0%{?el6}
 mkdir -p $RPM_BUILD_ROOT/%{_sysconfdir}/rc.d/init.d
 install -m755 rpm/turnserver.init.el \
