@@ -163,10 +163,10 @@ fi
 %defattr(-,root,root)
 /opt/coturn/bin/turnserver
 /opt/coturn/bin/turnadmin
-%attr(0640,turnserver,turnserver) %{_localstatedir}/db/turndb
-/opt/coturn/man/man1/coturn.1.gz
-/opt/coturn/man/man1/turnserver.1.gz
-/opt/coturn/man/man1/turnadmin.1.gz
+%attr(0640,turnserver,turnserver) /opt/coturn/var/db/turndb
+/opt/coturn/man/man1/coturn.1
+/opt/coturn/man/man1/turnserver.1
+/opt/coturn/man/man1/turnadmin.1
 %dir %attr(-,turnserver,turnserver) %{_sysconfdir}/%{name}
 %config(noreplace) %attr(0644,turnserver,turnserver) %{_sysconfdir}/%{name}/turnserver.conf
 %dir %attr(0750,turnserver,turnserver) %{_localstatedir}/run/turnserver
