@@ -164,9 +164,9 @@ fi
 /opt/coturn/bin/turnserver
 /opt/coturn/bin/turnadmin
 %attr(0640,turnserver,turnserver) %{_localstatedir}/db/turndb
-/usr/share/man/man1/coturn.1.gz
-/usr/share/man/man1/turnserver.1.gz
-/usr/share/man/man1/turnadmin.1.gz
+/opt/coturn/man/man1/coturn.1.gz
+/opt/coturn/man/man1/turnserver.1.gz
+/opt/coturn/man/man1/turnadmin.1.gz
 %dir %attr(-,turnserver,turnserver) %{_sysconfdir}/%{name}
 %config(noreplace) %attr(0644,turnserver,turnserver) %{_sysconfdir}/%{name}/turnserver.conf
 %dir %attr(0750,turnserver,turnserver) %{_localstatedir}/run/turnserver
@@ -219,7 +219,7 @@ fi
 %dir /opt/coturn/share/examples/turnserver/scripts/longtermsecure
 /opt/coturn/share/examples/turnserver/scripts/longtermsecure/secure_dos_attack.sh
 /opt/coturn/share/examples/turnserver/scripts/longtermsecure/secure_dtls_client.sh
-/opt/coturn/share/examples/turnserver/scripts/longtermsecuresecure_dtls_client_cert.sh
+/opt/coturn/share/examples/turnserver/scripts/longtermsecure/secure_dtls_client_cert.sh
 /opt/coturn/share/examples/turnserver/scripts/longtermsecure/secure_tls_client_cert.sh
 /opt/coturn/share/examples/turnserver/scripts/longtermsecure/secure_relay.sh
 /opt/coturn/share/examples/turnserver/scripts/longtermsecure/secure_relay_cert.sh
