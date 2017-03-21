@@ -100,7 +100,7 @@ This package contains the TURN client development headers.
 %setup -q -n %{name}-%{version}
 
 %build
-PREFIX=%{_prefix} CONFDIR=%{_sysconfdir}/%{name} EXAMPLESDIR=%{_datadir}/%{name} \
+PREFIX=%{/opt} CONFDIR=%{_sysconfdir}/%{name} EXAMPLESDIR=%{_datadir}/%{name} \
 MANPREFIX=%{_datadir} LIBDIR=%{_libdir} ./configure
 make
 
