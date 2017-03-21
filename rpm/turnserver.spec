@@ -100,8 +100,8 @@ This package contains the TURN client development headers.
 %setup -q -n %{name}-%{version}
 
 %build
-PREFIX=/opt/coturn CONFDIR=/opt/coturn/conf EXAMPLESDIR=/opt/coturn/examples \
-	MANPREFIX=/opt/coturn LIBDIR=/opt/coturn/lib ./configure
+PREFIX=/opt CONFDIR=%{_sysconfdir}/%{name} EXAMPLESDIR=%{_datadir}/%{name} \
+MANPREFIX=%{_datadir} LIBDIR=%{_libdir} ./configure
 make
 
 %install
