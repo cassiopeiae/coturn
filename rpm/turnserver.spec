@@ -196,8 +196,6 @@ fi
 /opt/coturn/share/turnserver/testmongosetup.sh
 /opt/coturn/share/turnserver/testsqldbsetup.sql
 %dir /opt/coturn/share/examples/turnserver/etc
-/opt/coturn/share/examples/turnserver/etc/turn_server_cert.pem
-/opt/coturn/share/examples/turnserver/etc/turn_server_pkey.pem
 /opt/coturn/share/examples/turnserver/etc/turnserver.conf
 %dir /opt/coturn/share/examples/turnserver/scripts
 /opt/coturn/share/examples/turnserver/scripts/peer.sh
