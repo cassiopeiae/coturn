@@ -168,7 +168,7 @@ fi
 /opt/coturn/man/man1/turnserver.1
 /opt/coturn/man/man1/turnadmin.1
 %dir %attr(-,turnserver,turnserver) %{_sysconfdir}/%{name}
-%config(noreplace) %attr(0644,turnserver,turnserver) %{_sysconfdir}/%{name}/turnserver.conf
+%config(noreplace) %attr(0644,turnserver,turnserver) /opt/coturn/share/examples/turnserver/etc/turnserver.conf
 %dir %attr(0750,turnserver,turnserver) %{_localstatedir}/run/turnserver
 %config(noreplace) %{_sysconfdir}/sysconfig/turnserver
 %if 0%{?el6}
@@ -195,10 +195,10 @@ fi
 /opt/coturn/share/turnserver/testredisdbsetup.sh
 /opt/coturn/share/turnserver/testmongosetup.sh
 /opt/coturn/share/turnserver/testsqldbsetup.sql
-%dir %{_datadir}/%{name}/etc
-%{_datadir}/%{name}/etc/turn_server_cert.pem
-%{_datadir}/%{name}/etc/turn_server_pkey.pem
-%{_datadir}/%{name}/etc/turnserver.conf
+%dir /opt/coturn/share/examples/turnserver/etc
+/opt/coturn/share/examples/turnserver/etc/turn_server_cert.pem
+/opt/coturn/share/examples/turnserver/etc/turn_server_pkey.pem
+/opt/coturn/share/examples/turnserver/etc/turnserver.conf
 %dir /opt/coturn/share/examples/turnserver/scripts
 /opt/coturn/share/examples/turnserver/scripts/peer.sh
 /opt/coturn/share/examples/turnserver/scripts/oauth.sh
