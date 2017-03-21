@@ -168,7 +168,7 @@ fi
 /opt/coturn/man/man1/turnserver.1
 /opt/coturn/man/man1/turnadmin.1
 %dir %attr(-,turnserver,turnserver) /opt/coturn/etc
-%config(noreplace) %attr(0644,turnserver,turnserver) /opt/coturn/share/examples/turnserver/etc/turnserver.conf
+%config(noreplace) %attr(0644,turnserver,turnserver) /opt/coturn/share/examples/turnserver/etc/
 %dir %attr(0750,turnserver,turnserver) /var/run/turnserver
 %config(noreplace) %{_sysconfdir}/sysconfig/turnserver
 %if 0%{?el6}
