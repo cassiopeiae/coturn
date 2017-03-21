@@ -272,7 +272,7 @@ fi
 %dir /opt/coturn/share/doc/turnserver
 /opt/coturn/share/doc/turnserver/LICENSE
 /opt/coturn/share/doc/turnserver/README.turnutils
-%dir %{_datadir}/%{name}
+%dir /opt/coturn/
 %dir /opt/coturn/share/examples/turnserver/etc
 /opt/coturn/share/examples/turnserver/etc/turn_client_cert.pem
 /opt/coturn/share/examples/turnserver/etc/turn_client_pkey.pem
