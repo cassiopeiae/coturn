@@ -20,10 +20,10 @@ fi
 
 cd ${BUILDDIR}/tmp
 rm -rf turnserver-${TURNVERSION}
-git clone ${TURNSERVER_GIT_URL} --branch ${TURNVERSION} turnserver-${TURNVERSION}
+git clone https://github.com/cassiopeiae/coturn.git --branch ${TURNVERSION} turnserver-${TURNVERSION}
 ER=$?
 if ! [ ${ER} -eq 0 ] ; then
-	git clone ${TURNSERVER_GIT_URL} turnserver-${TURNVERSION}
+	git clone https://github.com/cassiopeiae/coturn.git turnserver-${TURNVERSION}
 	ER=$?
 	if ! [ ${ER} -eq 0 ] ; then
     	cd ${CPWD}
