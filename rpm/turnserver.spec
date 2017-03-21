@@ -111,7 +111,7 @@ install -m644 /root/rpmbuild/tmp/turnserver-4.5.0.6/rpm/turnserver.sysconfig \
 		/root/rpmbuild/BUILDROOT/turnserver-4.5.0.6-0.el6.x86_64/etc/sysconfig/turnserver
 sed -i -e "s/#syslog/syslog/g" \
     -e "s/#no-stdout-log/no-stdout-log/g" \
-    $RPM_BUILD_ROOT%{_sysconfdir}/%{name}/turnserver.conf.default
+    $RPM_BUILD_ROOT/opt/coturn/%{_sysconfdir}/%{name}/turnserver.conf.default
 %if 0%{?el6}
 mkdir -p $RPM_BUILD_ROOT/%{_sysconfdir}/rc.d/init.d
 install -m755 /root/rpmbuild/tmp/turnserver-4.5.0.6/rpm/turnserver.init.el \
@@ -124,7 +124,7 @@ mkdir -p $RPM_BUILD_ROOT/%{_unitdir}
 install -m755 /root/rpmbuild/tmp/turnserver-4.5.0.6/rpm/turnserver.service.fc \
 		$RPM_BUILD_ROOT/%{_unitdir}/turnserver.service
 %endif
-mv $RPM_BUILD_ROOT/%{_sysconfdir}/%{name}/turnserver.conf.default $RPM_BUILD_ROOT/%{_sysconfdir}/%{name}/turnserver.conf
+mv $RPM_BUILD_ROOT/opt/coturn/%{_sysconfdir}/%{name}/turnserver.conf.default $RPM_BUILD_ROOT/%{_sysconfdir}/%{name}/turnserver.conf
 %{__install} -Dpm 0644 /root/rpmbuild/tmp/turnserver-4.5.0.6/rpm/turnserver-tmpfiles.conf %{buildroot}%{_tmpfilesdir}/turnserver.conf
 mkdir -p %{buildroot}%{_localstatedir}/run/turnserver
 
