@@ -100,7 +100,7 @@ This package contains the TURN client development headers.
 %setup -q -n %{name}-%{version}
 
 %build
-PREFIX=/opt ./configure
+PREFIX=/opt/coturn ./configure
 make
 
 %install
@@ -108,7 +108,7 @@ rm -rf $RPM_BUILD_ROOT
 DESTDIR=$RPM_BUILD_ROOT make install
 mkdir -p $RPM_BUILD_ROOT/%{_sysconfdir}/sysconfig
 install -m644 rpm/turnserver.sysconfig \
-		/etc/sysconfig/turnserver
+		/opt/coturn/etc/turnserver
 sed -i -e "s/#syslog/syslog/g" \
     -e "s/#no-stdout-log/no-stdout-log/g" \
     $RPM_BUILD_ROOcd T/%{_sysconfdir}/%{name}/turnserver.conf.default
