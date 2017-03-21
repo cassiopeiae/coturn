@@ -269,13 +269,13 @@ fi
 /opt/coturn/man/man1/turnutils_uclient.1
 /opt/coturn/man/man1/turnutils_oauth.1
 /opt/coturn/man/man1/turnutils_natdiscovery.1
-%dir %{_docdir}/%{name}
-%{_docdir}/%{name}/LICENSE
-%{_docdir}/%{name}/README.turnutils
+%dir /opt/coturn/share/doc/turnserver
+/opt/coturn/share/doc/turnserver/LICENSE
+/opt/coturn/share/doc/turnserver/README.turnutils
 %dir %{_datadir}/%{name}
-%dir %{_datadir}/%{name}/etc
-%{_datadir}/%{name}/etc/turn_client_cert.pem
-%{_datadir}/%{name}/etc/turn_client_pkey.pem
+%dir /opt/coturn/share/examples/turnserver/etc
+/opt/coturn/share/examples/turnserver/etc/turn_client_cert.pem
+/opt/coturn/share/examples/turnserver/etc/turn_client_pkey.pem
 
 %files		client-libs
 %{_docdir}/%{name}/LICENSE
