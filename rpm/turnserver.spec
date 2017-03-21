@@ -175,7 +175,6 @@ fi
 %config %{_sysconfdir}/rc.d/init.d/turnserver
 %else
 %config %{_unitdir}/turnserver.service
-%{_tmpfilesdir}/turnserver.conf
 %endif
 %dir /opt/coturn/share/doc/turnserver
 /opt/coturn/share/doc/turnserver/LICENSE
