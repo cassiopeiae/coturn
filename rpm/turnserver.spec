@@ -124,7 +124,7 @@ mkdir -p $RPM_BUILD_ROOT/%{_unitdir}
 install -m755 /root/rpmbuild/tmp/turnserver-4.5.0.6/rpm/turnserver.service.fc \
 		$RPM_BUILD_ROOT/%{_unitdir}/turnserver.service
 %endif
-mv /root/rpmbuild/BUILDROOT/turnserver-4.5.0.6-0.el6.x86_64/opt/coturn/etc/turnserver.conf.default $RPM_BUILD_ROOT%{_sysconfdir}/turnserver.conf
+
 mkdir -p %{buildroot}%{_localstatedir}/run/turnserver
 
 %clean
