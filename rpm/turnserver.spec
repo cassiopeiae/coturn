@@ -199,70 +199,70 @@ fi
 %{_datadir}/%{name}/etc/turn_server_cert.pem
 %{_datadir}/%{name}/etc/turn_server_pkey.pem
 %{_datadir}/%{name}/etc/turnserver.conf
-%dir %{_datadir}/%{name}/scripts
-%{_datadir}/%{name}/scripts/peer.sh
-%{_datadir}/%{name}/scripts/oauth.sh
-%{_datadir}/%{name}/scripts/readme.txt
-%dir %{_datadir}/%{name}/scripts/basic
-%{_datadir}/%{name}/scripts/basic/dos_attack.sh
-%{_datadir}/%{name}/scripts/basic/relay.sh
-%{_datadir}/%{name}/scripts/basic/tcp_client.sh
-%{_datadir}/%{name}/scripts/basic/tcp_client_c2c_tcp_relay.sh
-%{_datadir}/%{name}/scripts/basic/udp_c2c_client.sh
-%{_datadir}/%{name}/scripts/basic/udp_client.sh
-%dir %{_datadir}/%{name}/scripts/loadbalance
-%{_datadir}/%{name}/scripts/loadbalance/master_relay.sh
-%{_datadir}/%{name}/scripts/loadbalance/slave_relay_1.sh
-%{_datadir}/%{name}/scripts/loadbalance/slave_relay_2.sh
-%{_datadir}/%{name}/scripts/loadbalance/tcp_c2c_tcp_relay.sh
-%{_datadir}/%{name}/scripts/loadbalance/udp_c2c.sh
-%dir %{_datadir}/%{name}/scripts/longtermsecure
-%{_datadir}/%{name}/scripts/longtermsecure/secure_dos_attack.sh
-%{_datadir}/%{name}/scripts/longtermsecure/secure_dtls_client.sh
-%{_datadir}/%{name}/scripts/longtermsecure/secure_dtls_client_cert.sh
-%{_datadir}/%{name}/scripts/longtermsecure/secure_tls_client_cert.sh
-%{_datadir}/%{name}/scripts/longtermsecure/secure_relay.sh
-%{_datadir}/%{name}/scripts/longtermsecure/secure_relay_cert.sh
-%{_datadir}/%{name}/scripts/longtermsecure/secure_tcp_client.sh
-%{_datadir}/%{name}/scripts/longtermsecure/secure_tcp_client_c2c_tcp_relay.sh
-%{_datadir}/%{name}/scripts/longtermsecure/secure_tls_client.sh
-%{_datadir}/%{name}/scripts/longtermsecure/secure_tls_client_c2c_tcp_relay.sh
-%{_datadir}/%{name}/scripts/longtermsecure/secure_udp_c2c.sh
-%{_datadir}/%{name}/scripts/longtermsecure/secure_udp_client.sh
-%{_datadir}/%{name}/scripts/longtermsecure/secure_sctp_client.sh
-%dir %{_datadir}/%{name}/scripts/longtermsecuredb
-%{_datadir}/%{name}/scripts/longtermsecuredb/secure_relay_with_db_mysql.sh
-%{_datadir}/%{name}/scripts/longtermsecuredb/secure_relay_with_db_mysql_ssl.sh
-%{_datadir}/%{name}/scripts/longtermsecuredb/secure_relay_with_db_mongo.sh
-%{_datadir}/%{name}/scripts/longtermsecuredb/secure_relay_with_db_psql.sh
-%{_datadir}/%{name}/scripts/longtermsecuredb/secure_relay_with_db_redis.sh
-%{_datadir}/%{name}/scripts/longtermsecuredb/secure_relay_with_db_sqlite.sh
-%dir %{_datadir}/%{name}/scripts/restapi
-%{_datadir}/%{name}/scripts/restapi/secure_relay_secret.sh
-%{_datadir}/%{name}/scripts/restapi/secure_relay_secret_with_db_mysql.sh
-%{_datadir}/%{name}/scripts/restapi/secure_relay_secret_with_db_psql.sh
-%{_datadir}/%{name}/scripts/restapi/secure_relay_secret_with_db_redis.sh
-%{_datadir}/%{name}/scripts/restapi/secure_relay_secret_with_db_mongo.sh
-%{_datadir}/%{name}/scripts/restapi/secure_relay_secret_with_db_sqlite.sh
-%{_datadir}/%{name}/scripts/restapi/secure_udp_client_with_secret.sh
-%{_datadir}/%{name}/scripts/restapi/shared_secret_maintainer.pl
-%dir %{_datadir}/%{name}/scripts/selfloadbalance
-%{_datadir}/%{name}/scripts/selfloadbalance/secure_dos_attack.sh
-%{_datadir}/%{name}/scripts/selfloadbalance/secure_relay.sh
-%dir %{_datadir}/%{name}/scripts/mobile
-%{_datadir}/%{name}/scripts/mobile/mobile_relay.sh
-%{_datadir}/%{name}/scripts/mobile/mobile_dtls_client.sh
-%{_datadir}/%{name}/scripts/mobile/mobile_tcp_client.sh
-%{_datadir}/%{name}/scripts/mobile/mobile_tls_client_c2c_tcp_relay.sh
-%{_datadir}/%{name}/scripts/mobile/mobile_udp_client.sh
+%dir /opt/coturn/share/examples/turnserver/scripts
+/opt/coturn/share/examples/turnserver/scripts/peer.sh
+/opt/coturn/share/examples/turnserver/scripts/oauth.sh
+/opt/coturn/share/examples/turnserver/scripts/readme.txt
+%dir /opt/coturn/share/examples/turnserver/scripts/basic
+/opt/coturn/share/examples/turnserver/scripts/basic/dos_attack.sh
+/opt/coturn/share/examples/turnserver/scripts/relay.sh
+/opt/coturn/share/examples/turnserver/scripts/tcp_client.sh
+/opt/coturn/share/examples/turnserver/scripts/tcp_client_c2c_tcp_relay.sh
+/opt/coturn/share/examples/turnserver/scripts/udp_c2c_client.sh
+/opt/coturn/share/examples/turnserver/scripts//udp_client.sh
+%dir /opt/coturn/share/examples/turnserver/scripts/loadbalance
+/opt/coturn/share/examples/turnserver/scripts/loadbalance/master_relay.sh
+/opt/coturn/share/examples/turnserver/scripts/loadbalance/slave_relay_1.sh
+/opt/coturn/share/examples/turnserver/scripts/loadbalance/slave_relay_2.sh
+/opt/coturn/share/examples/turnserver/scripts/loadbalance/tcp_c2c_tcp_relay.sh
+/opt/coturn/share/examples/turnserver/scripts/loadbalance/udp_c2c.sh
+%dir /opt/coturn/share/examples/turnserver/scripts/longtermsecure
+/opt/coturn/share/examples/turnserver/scripts/longtermsecure/secure_dos_attack.sh
+/opt/coturn/share/examples/turnserver/scripts/longtermsecure/secure_dtls_client.sh
+/opt/coturn/share/examples/turnserver/scripts/longtermsecuresecure_dtls_client_cert.sh
+/opt/coturn/share/examples/turnserver/scripts/longtermsecure/secure_tls_client_cert.sh
+/opt/coturn/share/examples/turnserver/scripts/longtermsecure/secure_relay.sh
+/opt/coturn/share/examples/turnserver/scripts/longtermsecure/secure_relay_cert.sh
+/opt/coturn/share/examples/turnserver/scripts/longtermsecure/secure_tcp_client.sh
+/opt/coturn/share/examples/turnserver/scripts/longtermsecure/secure_tcp_client_c2c_tcp_relay.sh
+/opt/coturn/share/examples/turnserver/scripts/longtermsecure/secure_tls_client.sh
+/opt/coturn/share/examples/turnserver/scripts/longtermsecure/secure_tls_client_c2c_tcp_relay.sh
+/opt/coturn/share/examples/turnserver/scripts/longtermsecure/secure_udp_c2c.sh
+/opt/coturn/share/examples/turnserver/scripts/longtermsecure/secure_udp_client.sh
+/opt/coturn/share/examples/turnserver/scripts/longtermsecure/secure_sctp_client.sh
+%dir /opt/coturn/share/examples/turnserver/scripts/longtermsecuredb
+/opt/coturn/share/examples/turnserver/scripts/longtermsecuredb/secure_relay_with_db_mysql.sh
+/opt/coturn/share/examples/turnserver/scripts/longtermsecuredb/secure_relay_with_db_mysql_ssl.sh
+/opt/coturn/share/examples/turnserver/scripts/longtermsecuredb/secure_relay_with_db_mongo.sh
+/opt/coturn/share/examples/turnserver/scripts/longtermsecuredb/secure_relay_with_db_psql.sh
+/opt/coturn/share/examples/turnserver/scripts/longtermsecuredb/secure_relay_with_db_redis.sh
+/opt/coturn/share/examples/turnserver/scripts/longtermsecuredb/secure_relay_with_db_sqlite.sh
+%dir /opt/coturn/share/examples/turnserver/scripts/restapi
+/opt/coturn/share/examples/turnserver/scripts/restapi/secure_relay_secret.sh
+/opt/coturn/share/examples/turnserver/scripts/restapi/secure_relay_secret_with_db_mysql.sh
+/opt/coturn/share/examples/turnserver/scripts/restapi/secure_relay_secret_with_db_psql.sh
+/opt/coturn/share/examples/turnserver/scripts/restapi/secure_relay_secret_with_db_redis.sh
+/opt/coturn/share/examples/turnserver/scripts/restapi/secure_relay_secret_with_db_mongo.sh
+/opt/coturn/share/examples/turnserver/scripts/restapi/restapi/secure_relay_secret_with_db_sqlite.sh
+/opt/coturn/share/examples/turnserver/scripts/restapi/restapi/secure_udp_client_with_secret.sh
+/opt/coturn/share/examples/turnserver/scripts/restapi/restapi/shared_secret_maintainer.pl
+%dir /opt/coturn/share/examples/turnserver/scripts/selfloadbalance
+/opt/coturn/share/examples/turnserver/scripts/selfloadbalance/secure_dos_attack.sh
+/opt/coturn/share/examples/turnserver/scripts/selfloadbalance/secure_relay.sh
+%dir /opt/coturn/share/examples/turnserver/scripts/mobile
+/opt/coturn/share/examples/turnserver/scripts/mobile/mobile_relay.sh
+/opt/coturn/share/examples/turnserver/scripts/mobile/mobile_dtls_client.sh
+/opt/coturn/share/examples/turnserver/scripts/mobile/mobile_tcp_client.sh
+/opt/coturn/share/examples/turnserver/scripts/mobile/mobile_tls_client_c2c_tcp_relay.sh
+/opt/coturn/share/examples/turnserver/scripts/mobile/mobile_udp_client.sh
 
 %files 		utils
 %defattr(-,root,root)
-%{_bindir}/turnutils_peer
-%{_bindir}/turnutils_stunclient
-%{_bindir}/turnutils_uclient
-%{_bindir}/turnutils_oauth
-%{_bindir}/turnutils_natdiscovery
+/opt/coturn/bin/turnutils_peer
+/opt/coturn/bin/turnutils_stunclient
+/opt/coturn/bin/turnutils_uclient
+/opt/coturn/bin/turnutils_oauth
+/opt/coturn/bin/turnutils_natdiscovery
 %{_mandir}/man1/turnutils.1.gz
 %{_mandir}/man1/turnutils_peer.1.gz
 %{_mandir}/man1/turnutils_stunclient.1.gz
