@@ -205,11 +205,11 @@ fi
 /opt/coturn/share/examples/turnserver/scripts/readme.txt
 %dir /opt/coturn/share/examples/turnserver/scripts/basic
 /opt/coturn/share/examples/turnserver/scripts/basic/dos_attack.sh
-/opt/coturn/share/examples/turnserver/scripts/relay.sh
-/opt/coturn/share/examples/turnserver/scripts/tcp_client.sh
-/opt/coturn/share/examples/turnserver/scripts/tcp_client_c2c_tcp_relay.sh
-/opt/coturn/share/examples/turnserver/scripts/udp_c2c_client.sh
-/opt/coturn/share/examples/turnserver/scripts//udp_client.sh
+/opt/coturn/share/examples/turnserver/scripts/basic/relay.sh
+/opt/coturn/share/examples/turnserver/scripts/basic/tcp_client.sh
+/opt/coturn/share/examples/turnserver/scripts/basic/tcp_client_c2c_tcp_relay.sh
+/opt/coturn/share/examples/turnserver/scripts/basic/udp_c2c_client.sh
+/opt/coturn/share/examples/turnserver/scripts/basic/udp_client.sh
 %dir /opt/coturn/share/examples/turnserver/scripts/loadbalance
 /opt/coturn/share/examples/turnserver/scripts/loadbalance/master_relay.sh
 /opt/coturn/share/examples/turnserver/scripts/loadbalance/slave_relay_1.sh
@@ -243,9 +243,9 @@ fi
 /opt/coturn/share/examples/turnserver/scripts/restapi/secure_relay_secret_with_db_psql.sh
 /opt/coturn/share/examples/turnserver/scripts/restapi/secure_relay_secret_with_db_redis.sh
 /opt/coturn/share/examples/turnserver/scripts/restapi/secure_relay_secret_with_db_mongo.sh
-/opt/coturn/share/examples/turnserver/scripts/restapi/restapi/secure_relay_secret_with_db_sqlite.sh
-/opt/coturn/share/examples/turnserver/scripts/restapi/restapi/secure_udp_client_with_secret.sh
-/opt/coturn/share/examples/turnserver/scripts/restapi/restapi/shared_secret_maintainer.pl
+/opt/coturn/share/examples/turnserver/scripts/restapi/secure_relay_secret_with_db_sqlite.sh
+/opt/coturn/share/examples/turnserver/scripts/restapi/secure_udp_client_with_secret.sh
+/opt/coturn/share/examples/turnserver/scripts/restapi/shared_secret_maintainer.pl
 %dir /opt/coturn/share/examples/turnserver/scripts/selfloadbalance
 /opt/coturn/share/examples/turnserver/scripts/selfloadbalance/secure_dos_attack.sh
 /opt/coturn/share/examples/turnserver/scripts/selfloadbalance/secure_relay.sh
