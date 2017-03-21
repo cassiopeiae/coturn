@@ -107,8 +107,7 @@ make
 rm -rf $RPM_BUILD_ROOT
 DESTDIR=$RPM_BUILD_ROOT make install
 mkdir -p $RPM_BUILD_ROOT/%{_sysconfdir}/sysconfig
-install -m644 rpm/turnserver.sysconfig \
-		/opt/coturn/etc/turnserver
+
 sed -i -e "s/#syslog/syslog/g" \
     -e "s/#no-stdout-log/no-stdout-log/g" \
     $RPM_BUILD_ROOcd T/%{_sysconfdir}/%{name}/turnserver.conf.default
