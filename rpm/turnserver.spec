@@ -187,14 +187,14 @@ fi
 /opt/coturn/share/doc/turnserver/schema.mongo.sh
 /opt/coturn/share/doc/turnserver/schema.stats.redis
 /opt/coturn/share/doc/turnserver/schema.userdb.redis
-%dir /usr/share/turnserver
-/usr/share/turnserver/schema.sql
-/usr/share/turnserver/schema.mongo.sh
-/usr/share/turnserver/schema.stats.redis
-/usr/share/turnserver/schema.userdb.redis
-/usr/share/turnserver/testredisdbsetup.sh
-/usr/share/turnserver/testmongosetup.sh
-/usr/share/turnserver/testsqldbsetup.sql
+%dir /opt/coturn/share/turnserver
+/opt/coturn/share/turnserver/schema.sql
+/opt/coturn/share/turnserver/schema.mongo.sh
+/opt/coturn/share/turnserver/schema.stats.redis
+/opt/coturn/share/turnserver/schema.userdb.redis
+/opt/coturn/share/turnserver/testredisdbsetup.sh
+/opt/coturn/share/turnserver/testmongosetup.sh
+/opt/coturn/share/turnserver/testsqldbsetup.sql
 %dir %{_datadir}/%{name}/etc
 %{_datadir}/%{name}/etc/turn_server_cert.pem
 %{_datadir}/%{name}/etc/turn_server_pkey.pem
