@@ -11,7 +11,7 @@ Source0:	http://turnserver.open-sys.org/downloads/v%{version}/%{name}-%{version}
 BuildRequires:	gcc, make, redhat-rpm-config, sqlite-devel
 BuildRequires:	openssl-devel, libevent-devel, postgresql-devel
 BuildRequires:	hiredis-devel
-Requires:	openssl, sqlite, libevent, mysql-libs, postgresql-libs
+Requires:	openssl, sqlite, libevent-last-2.0.22-1.el6.remi.x86_64, mysql-libs, postgresql-libs
 Requires:	hiredis, perl-DBI, perl-libwww-perl
 
 %if 0%{?el6}
