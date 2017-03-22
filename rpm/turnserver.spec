@@ -9,9 +9,9 @@ URL:		https://github.com/coturn/coturn/
 Source0:	http://turnserver.open-sys.org/downloads/v%{version}/%{name}-%{version}.tar.gz
 
 BuildRequires:	gcc, make, redhat-rpm-config, sqlite-devel
-BuildRequires:	openssl-devel, libevent-devel, postgresql-devel
+BuildRequires:	openssl-devel, postgresql-devel
 BuildRequires:	hiredis-devel
-Requires:	openssl, sqlite, libevent-last-2.0.22-1.el6.remi.x86_64, mysql-libs, postgresql-libs
+Requires:	openssl, sqlite, mysql-libs, postgresql-libs
 Requires:	hiredis, perl-DBI, perl-libwww-perl
 
 %if 0%{?el6}
