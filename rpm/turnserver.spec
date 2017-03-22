@@ -84,7 +84,7 @@ This package contains the TURN client utils.
 %package 	client-libs
 Summary:	TURN client library
 Group:		System Environment/Libraries
-Requires:	openssl, libevent >= 2.0.0
+Requires:	opensslx
 
 %description	client-libs
 This package contains the TURN client library.
